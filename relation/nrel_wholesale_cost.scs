@@ -1,0 +1,47 @@
+nrel_wholesale_cost
+<- sc_node_norole_relation;
+=> nrel_first_domain: concept_hardware;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+            number;
+            concept_hardware
+		};;
+	*);
+=> nrel_main_idtf:
+	[Цена оптом']
+	(* <- lang_ru;; *);
+	[Wholesale cost']
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Оптовая стоимость')]
+		(* <- lang_ru;; *);
+		[Def. (Cost')]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Оптовая стоимость' - неролевое ориентированное отношение, связывающее товар и ее оптовую стоимость]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Wholesale cost' is a non-role oriented relationship that links a product and its wholesale cost]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			nrel_wholesale_cost;
+			number;
+			concept_hardware
+		};;
+	*);;

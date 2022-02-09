@@ -1,0 +1,47 @@
+nrel_count
+<- sc_node_norole_relation;
+=> nrel_first_domain: concept_hardware;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+            number;
+            concept_hardware
+		};;
+	*);
+=> nrel_main_idtf:
+	[Количество']
+	(* <- lang_ru;; *);
+	[Count']
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Количество')]
+		(* <- lang_ru;; *);
+		[Def. (Count')]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Количество' - неролевое ориентированное отношение, связывающее товар и его количество в одной упаковке]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Count' - a non-role oriented relationship that links a product and its quantity in one package]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			nrel_count;
+			number;
+			concept_hardware
+		};;
+	*);;

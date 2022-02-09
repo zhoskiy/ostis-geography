@@ -1,0 +1,47 @@
+nrel_cost
+<- sc_node_norole_relation;
+=> nrel_first_domain: concept_hardware;
+=> nrel_second_domain: number;
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+            number;
+            concept_hardware
+		};;
+	*);
+=> nrel_main_idtf:
+	[Стоимость']
+	(* <- lang_ru;; *);
+	[Cost']
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Стоимость')]
+		(* <- lang_ru;; *);
+		[Def. (Cost')]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Стоимость' - неролевое ориентированное отношение, связывающее товар и ее стоимость]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Cost' is a non-role oriented relationship that links a product and its value]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			nrel_cost;
+			number;
+			concept_hardware
+		};;
+	*);;
