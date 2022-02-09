@@ -1,0 +1,13 @@
+lux-463
+<- concept_nail;
+=>nrel_main_idtf:
+    [lux-463]
+    (* <- lang_en;; <- name_en;;*);
+    [lux-463]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    90;
+=>nrel_cost:
+    18.6;
+=>nrel_wholesale_cost:
+    13.9;;

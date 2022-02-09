@@ -1,0 +1,13 @@
+ilmax-34
+<- concept_nail;
+=>nrel_main_idtf:
+    [ilmax-34]
+    (* <- lang_en;; <- name_en;;*);
+    [ilmax-34]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    30;
+=>nrel_cost:
+    8.32;
+=>nrel_wholesale_cost:
+    6.24;;

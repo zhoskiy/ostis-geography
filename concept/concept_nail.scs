@@ -1,0 +1,35 @@
+concept_nail
+<- sc_node_not_relation;
+<= nrel_inclusion: concept_sup_concept;
+=> nrel_main_idtf:
+	[гвоздь]
+	(* <- lang_ru;; *);
+	[nail]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (гвоздь)]
+		(* <- lang_ru;; *);
+		[Def. (nail)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Заострённый стержень, обычно железный, со шляпкой на тупом конце.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[A pointed rod, usually made of iron, with a cap on the blunt end.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_nail
+		};;
+	*);;

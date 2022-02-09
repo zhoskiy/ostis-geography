@@ -1,0 +1,13 @@
+tytan-745
+<- concept_drill;
+=>nrel_main_idtf:
+    [tytan-745]
+    (* <- lang_en;; <- name_en;;*);
+    [tytan-745]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    80;
+=>nrel_cost:
+    16.4;
+=>nrel_wholesale_cost:
+    12.3;;

@@ -1,0 +1,13 @@
+soudal-347
+<- concept_drill;
+=>nrel_main_idtf:
+    [soudal-347]
+    (* <- lang_en;; <- name_en;;*);
+    [soudal-347]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    50;
+=>nrel_cost:
+    6.18;
+=>nrel_wholesale_cost:
+    4.63;;

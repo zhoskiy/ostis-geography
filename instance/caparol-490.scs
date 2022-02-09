@@ -1,0 +1,13 @@
+caparol-490
+<- concept_nail;
+=>nrel_main_idtf:
+    [caparol-490]
+    (* <- lang_en;; <- name_en;;*);
+    [caparol-490]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    70;
+=>nrel_cost:
+    11.5;
+=>nrel_wholesale_cost:
+    8.65;;

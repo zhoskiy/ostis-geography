@@ -1,0 +1,13 @@
+lux-472
+<- concept_drill;
+=>nrel_main_idtf:
+    [lux-472]
+    (* <- lang_en;; <- name_en;;*);
+    [lux-472]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    30;
+=>nrel_cost:
+    19.2;
+=>nrel_wholesale_cost:
+    14.4;;
