@@ -1,0 +1,13 @@
+ceresit_940
+<- concept_drill;
+=>nrel_main_idtf:
+    [ceresit_940]
+    (* <- lang_en;; <- name_en;;*);
+    [ceresit_940]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    20;
+=>nrel_cost:
+    8.12;
+=>nrel_wholesale_cost:
+    6.09;;

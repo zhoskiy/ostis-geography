@@ -1,0 +1,13 @@
+soudal_276
+<- concept_nail;
+=>nrel_main_idtf:
+    [soudal_276]
+    (* <- lang_en;; <- name_en;;*);
+    [soudal_276]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    50;
+=>nrel_cost:
+    15.5;
+=>nrel_wholesale_cost:
+    11.6;;

@@ -1,0 +1,13 @@
+ceresit_673
+<- concept_nail;
+=>nrel_main_idtf:
+    [ceresit_673]
+    (* <- lang_en;; <- name_en;;*);
+    [ceresit_673]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    20;
+=>nrel_cost:
+    9.62;
+=>nrel_wholesale_cost:
+    7.21;;
