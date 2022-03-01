@@ -1,0 +1,13 @@
+ilmax_470
+<- concept_drill;
+=>nrel_main_idtf:
+    [ilmax_470]
+    (* <- lang_en;; <- name_en;;*);
+    [ilmax_470]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    30;
+=>nrel_cost:
+    18.8;
+=>nrel_wholesale_cost:
+    14.1;;

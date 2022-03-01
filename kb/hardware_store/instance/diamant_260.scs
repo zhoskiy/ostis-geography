@@ -1,0 +1,13 @@
+diamant_260
+<- concept_drill;
+=>nrel_main_idtf:
+    [diamant_260]
+    (* <- lang_en;; <- name_en;;*);
+    [diamant_260]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    30;
+=>nrel_cost:
+    9.70;
+=>nrel_wholesale_cost:
+    7.28;;

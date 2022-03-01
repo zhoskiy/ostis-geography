@@ -1,0 +1,13 @@
+ilmax_890
+<- concept_nail;
+=>nrel_main_idtf:
+    [ilmax_890]
+    (* <- lang_en;; <- name_en;;*);
+    [ilmax_890]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    50;
+=>nrel_cost:
+    16.0;
+=>nrel_wholesale_cost:
+    12.0;;

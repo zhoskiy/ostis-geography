@@ -1,0 +1,13 @@
+tytan_74
+<- concept_nail;
+=>nrel_main_idtf:
+    [tytan_74]
+    (* <- lang_en;; <- name_en;;*);
+    [tytan_74]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    30;
+=>nrel_cost:
+    13.7;
+=>nrel_wholesale_cost:
+    10.2;;

@@ -1,0 +1,13 @@
+diamant_451
+<- concept_nail;
+=>nrel_main_idtf:
+    [diamant_451]
+    (* <- lang_en;; <- name_en;;*);
+    [diamant_451]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    90;
+=>nrel_cost:
+    17.1;
+=>nrel_wholesale_cost:
+    12.8;;

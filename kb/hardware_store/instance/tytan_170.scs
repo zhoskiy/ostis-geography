@@ -1,0 +1,13 @@
+tytan_170
+<- concept_drill;
+=>nrel_main_idtf:
+    [tytan_170]
+    (* <- lang_en;; <- name_en;;*);
+    [tytan_170]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    60;
+=>nrel_cost:
+    14.1;
+=>nrel_wholesale_cost:
+    10.6;;

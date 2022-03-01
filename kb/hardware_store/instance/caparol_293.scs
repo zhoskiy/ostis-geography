@@ -1,0 +1,13 @@
+caparol_293
+<- concept_drill;
+=>nrel_main_idtf:
+    [caparol_293]
+    (* <- lang_en;; <- name_en;;*);
+    [caparol_293]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_count:
+    50;
+=>nrel_cost:
+    16.2;
+=>nrel_wholesale_cost:
+    12.2;;
