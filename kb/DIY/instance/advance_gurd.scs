@@ -1,0 +1,17 @@
+advance_guard
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [ЭдвансГард]
+    (* <- lang_en;; <- name_en;;*);
+    [AdvanceGuard]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    minsk;
+=>nrel_city:
+    minsk;
+=>nrel_store_rating:
+    [4.7];
+=>nrel_reviews_number:
+    [6];;

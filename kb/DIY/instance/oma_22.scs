@@ -1,0 +1,17 @@
+oma_22
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [OMA]
+    (* <- lang_en;; <- name_en;;*);
+    [ОМА]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    brest;
+=>nrel_city:
+    lyakhovichi;
+=>nrel_store_rating:
+    [4.1];
+=>nrel_reviews_number:
+    [24];;

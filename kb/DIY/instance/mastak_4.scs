@@ -1,0 +1,17 @@
+mastak_4
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [Мастак]
+    (* <- lang_en;; <- name_en;;*);
+    [Mastak]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    minsk;
+=>nrel_city:
+    borisov;
+=>nrel_store_rating:
+    [4.6];
+=>nrel_reviews_number:
+    [520];;

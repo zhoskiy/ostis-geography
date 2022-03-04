@@ -1,0 +1,35 @@
+concept_hardware_store
+<- sc_node_not_relation;
+<= nrel_inclusion: concept_sup_concept;
+=> nrel_main_idtf:
+	[метиз]
+	(* <- lang_ru;; *);
+	[hardware]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Хозяйственный магазин)]
+		(* <- lang_ru;; *);
+		[Def. (Hardware store)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Хозяйственный магазин — специализированный магазин розничной торговли, в котором продают строительные, отделочные материалы и оборудование, товары для дома и сада.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hardware store is a specialized retail store that sells construction, decoration materials and equipment, home and garden products.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hardware_store
+		};;
+	*);;

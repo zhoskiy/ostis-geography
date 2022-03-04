@@ -1,0 +1,17 @@
+materik_4
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [Материк]
+    (* <- lang_en;; <- name_en;;*);
+    [Materik]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    brest;
+=>nrel_city:
+    brest;
+=>nrel_store_rating:
+    [4.5];
+=>nrel_reviews_number:
+    [1807];;

@@ -1,0 +1,17 @@
+oma_11
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [OMA]
+    (* <- lang_en;; <- name_en;;*);
+    [ОМА]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    hrodna;
+=>nrel_city:
+    hrodna;
+=>nrel_store_rating:
+    [4.0];
+=>nrel_reviews_number:
+    [190];;

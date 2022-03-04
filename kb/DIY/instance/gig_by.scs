@@ -1,0 +1,17 @@
+gig_by
+<- concept_hardware_store;
+=>nrel_main_idtf:
+    [Gyg.by]
+    (* <- lang_en;; <- name_en;;*);
+    [Gig.by]
+    (* <- lang_ru;; <- name_ru;; <- name;;*);
+=>nrel_country:
+    belarus;
+=>nrel_search_area:
+    minsk;
+=>nrel_city:
+    minsk;
+=>nrel_store_rating:
+    [5.0];
+=>nrel_reviews_number:
+    [1];;
