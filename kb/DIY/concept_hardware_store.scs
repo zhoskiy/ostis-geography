@@ -2,9 +2,9 @@ concept_hardware_store
 <- sc_node_not_relation;
 <= nrel_inclusion: concept_sup_concept;
 => nrel_main_idtf:
-	[метиз]
+	[Хозяйственный магазин]
 	(* <- lang_ru;; *);
-	[hardware]
+	[Hardware store]
 	(* <- lang_en;; *);
 <- rrel_key_sc_element:
 	...
