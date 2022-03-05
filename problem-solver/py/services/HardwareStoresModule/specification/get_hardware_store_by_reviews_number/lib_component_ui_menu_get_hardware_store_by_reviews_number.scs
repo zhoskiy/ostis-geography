@@ -1,0 +1,9 @@
+lib_component_ui_menu_get_hardware_store_by_reviews_number
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса поиска хозяйственных магазинов по количеству отзывов]
+	(* <- lang_ru;; *);
+	[Library component. User interfaces command of search of hardware stores by reviews number]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_atomic_reusable_components;;
