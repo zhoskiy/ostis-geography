@@ -1,0 +1,29 @@
+ui_menu_get_hardware_store_by_reviews_number <- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;;
+
+ui_menu_get_hardware_store_by_reviews_number
+=> nrel_main_idtf: 
+	[Найти хозяйственные магазины по количеству отзывов]
+	(* <- lang_ru;; *);
+=> nrel_idtf: 
+	[Запрос поиска хозяйственных магазинов для указанного количества отзывов или больше]
+	(* <- lang_ru;; *);;
+
+ui_menu_get_hardware_store_by_reviews_number
+=> nrel_main_idtf: 
+	[Get hardware stores by salt index]
+	(* <- lang_en;; *);
+=> nrel_idtf: 
+	[Request searches for hardware stores of the specified reviews number or more]
+	(* <- lang_en;; *);;
+
+ui_menu_get_hardware_store_by_reviews_number => ui_nrel_command_template:
+	[*
+		action_get_hardware_store_by_reviews_number _-> ._question_get_hardware_store_by_reviews_number
+			(*
+				_-> rrel_1::ui_arg_1;;
+			*);;
+		._question_get_hardware_store_by_reviews_number _<- question;;
+	*];;
+
+ui_menu_get_hardware_store_by_reviews_number => ui_nrel_command_lang_template: [Найти хозяйственные магазины с кол-вом отзывов от $ui_arg_1] (* <- lang_ru;; *);;
+ui_menu_get_hardware_store_by_reviews_number => ui_nrel_command_lang_template: [Get hardware stores with  reviews number from $ui_arg_1] (* <- lang_en;; *);;

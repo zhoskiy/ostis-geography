@@ -6,5 +6,8 @@ ui_menu_na_example_commands
 
 <= nrel_ui_commands_decomposition:
 	{
-		ui_menu_generate_osm_query
+		ui_menu_generate_osm_query;
+		ui_menu_get_hardware_store_by_rating;
+		ui_menu_get_hardware_store_by_city;
+		ui_menu_get_hardware_store_by_reviews_number
 	};;

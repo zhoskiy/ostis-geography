@@ -1,1 +1,3 @@
 add_subdirectory(OpenStreetMapAgent)
+add_subdirectory(HardwareStoresModule)
+

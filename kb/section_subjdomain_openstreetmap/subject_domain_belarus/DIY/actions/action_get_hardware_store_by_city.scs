@@ -1,0 +1,9 @@
+action_get_hardware_store_by_city
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[действие. получить хозяйственный магазин в определенном городе]
+	(* <- lang_ru;; *);
+	[action. get hardware store by city]
+	(* <- lang_en;; *);
+<- actions_class;
+<- atomic_action_class;;
