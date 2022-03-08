@@ -54,18 +54,3 @@
 =>nrel_main_idtf:
     [100];;
 
-_Minsk
-=>nrel_main_idtf:
-    [Минск];;
-
-_Brest
-=>nrel_main_idtf:
-    [Брест];;
-
-_Hrodna
-=>nrel_main_idtf:
-    [Гродно];;
-
-_Slutsk
-=>nrel_main_idtf:
-    [Слуцк];;
