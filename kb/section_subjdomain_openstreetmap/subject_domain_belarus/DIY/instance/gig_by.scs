@@ -1,10 +1,10 @@
 gig_by
 <- concept_hardware_store;
 =>nrel_main_idtf:
-    [Gyg.by]
-    (* <- lang_en;; <- name_en;;*);
-    [Gig.by]
+    [Гиг.бай]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Gig.by]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ gig_by
     [5.0];
 =>nrel_reviews_number:
     [1];;
+

@@ -2,9 +2,9 @@ dudovo
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Дудово]
-    (* <- lang_en;; <- name_en;;*);
-    [Dudovo]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Dudovo]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ dudovo
     [4.4];
 =>nrel_reviews_number:
     [10];;
+

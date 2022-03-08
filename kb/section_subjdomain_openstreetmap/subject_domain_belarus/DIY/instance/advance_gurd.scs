@@ -2,9 +2,9 @@ advance_guard
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [ЭдвансГард]
-    (* <- lang_en;; <- name_en;;*);
-    [AdvanceGuard]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [AdvanceGuard]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ advance_guard
     [4.7];
 =>nrel_reviews_number:
     [6];;
+

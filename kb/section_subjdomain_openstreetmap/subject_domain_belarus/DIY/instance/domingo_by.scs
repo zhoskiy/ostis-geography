@@ -2,9 +2,9 @@ domingo_by
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [DOMINGO.BY]
-    (* <- lang_en;; <- name_en;;*);
-    [DOMINGO.BY]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [DOMINGO.BY]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ domingo_by
     [4.7];
 =>nrel_reviews_number:
     [65];;
+

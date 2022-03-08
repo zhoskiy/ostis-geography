@@ -2,9 +2,9 @@ sdelai_sam_4
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Сделай сам]
-    (* <- lang_en;; <- name_en;;*);
-    [Sdelai sam]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Sdelai sam]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ sdelai_sam_4
     [4.3];
 =>nrel_reviews_number:
     [1150];;
+

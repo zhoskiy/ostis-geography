@@ -2,9 +2,9 @@ chestroy
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Честрой]
-    (* <- lang_en;; <- name_en;;*);
-    [Chestroy]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Chestroy]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ chestroy
     [5.0];
 =>nrel_reviews_number:
     [2];;
+

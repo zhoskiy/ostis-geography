@@ -2,9 +2,9 @@ izomat_stroy
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [ИЗОМАТ-СТРОЙ]
-    (* <- lang_en;; <- name_en;;*);
-    [IZOMAT-STROY]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [IZOMAT-STROY]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ izomat_stroy
     [4.8];
 =>nrel_reviews_number:
     [9];;
+

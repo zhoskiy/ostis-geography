@@ -2,9 +2,9 @@ mastak_2
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Мастак]
-    (* <- lang_en;; <- name_en;;*);
-    [Mastak]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Mastak]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ mastak_2
     [4.1];
 =>nrel_reviews_number:
     [10];;
+

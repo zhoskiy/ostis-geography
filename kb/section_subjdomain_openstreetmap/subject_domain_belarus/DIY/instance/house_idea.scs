@@ -2,9 +2,9 @@ house_idea
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Идея Дома]
-    (* <- lang_en;; <- name_en;;*);
-    [House Idea]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [House Idea]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ house_idea
     [4.2];
 =>nrel_reviews_number:
     [37];;
+

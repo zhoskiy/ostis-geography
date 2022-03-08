@@ -2,9 +2,9 @@ ridbai
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Ридбай]
-    (* <- lang_en;; <- name_en;;*);
-    [Ridbai]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Ridbai]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ ridbai
     [4.6];
 =>nrel_reviews_number:
     [29];;
+

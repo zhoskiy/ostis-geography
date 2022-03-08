@@ -2,9 +2,9 @@ santinel_1
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Сантинель]
-    (* <- lang_en;; <- name_en;;*);
-    [Santinel]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Santinel]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ santinel_1
     [2.5];
 =>nrel_reviews_number:
     [2];;
+

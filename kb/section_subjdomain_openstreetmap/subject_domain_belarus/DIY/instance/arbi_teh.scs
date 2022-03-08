@@ -2,9 +2,9 @@ arbi_teh
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [АрбиТех]
-    (* <- lang_en;; <- name_en;;*);
-    [ArbiTeh]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [ArbiTeh]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ arbi_teh
     [5.0];
 =>nrel_reviews_number:
     [5];;
+

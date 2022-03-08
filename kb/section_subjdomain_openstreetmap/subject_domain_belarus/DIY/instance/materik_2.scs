@@ -2,9 +2,9 @@ materik_2
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Материк]
-    (* <- lang_en;; <- name_en;;*);
-    [Materik]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Materik]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ materik_2
     [4.5];
 =>nrel_reviews_number:
     [1292];;
+

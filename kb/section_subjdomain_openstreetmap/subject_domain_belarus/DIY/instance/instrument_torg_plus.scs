@@ -2,9 +2,9 @@ instrument_torg_plus
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [ИнструментТоргПлюс]
-    (* <- lang_en;; <- name_en;;*);
-    [InstrumentTorgPlus]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [InstrumentTorgPlus]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ instrument_torg_plus
     [5.0];
 =>nrel_reviews_number:
     [1];;
+

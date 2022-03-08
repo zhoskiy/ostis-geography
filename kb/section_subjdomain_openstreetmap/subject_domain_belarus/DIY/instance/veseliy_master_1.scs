@@ -2,9 +2,9 @@ veseliy_master_1
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [Веселый Мастер]
-    (* <- lang_en;; <- name_en;;*);
-    [Funny Master]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [Funny Master]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ veseliy_master_1
     [4.6];
 =>nrel_reviews_number:
     [96];;
+

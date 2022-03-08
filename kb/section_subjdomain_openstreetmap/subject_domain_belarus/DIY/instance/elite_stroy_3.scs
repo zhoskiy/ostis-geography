@@ -2,9 +2,9 @@ elite_stroy_3
 <- concept_hardware_store;
 =>nrel_main_idtf:
     [ЭлитСтрой]
-    (* <- lang_en;; <- name_en;;*);
-    [ElitStroy]
     (* <- lang_ru;; <- name_ru;; <- name;;*);
+    [ElitStroy]
+    (* <- lang_en;; <- name_en;;*);
 =>nrel_country:
     belarus;
 =>nrel_search_area:
@@ -15,3 +15,4 @@ elite_stroy_3
     [4.2];
 =>nrel_reviews_number:
     [29];;
+
