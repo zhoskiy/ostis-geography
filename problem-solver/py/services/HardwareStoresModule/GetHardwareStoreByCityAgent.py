@@ -27,34 +27,27 @@ class GetHardwareStoreByCityAgent(ScAgent):
                     raise Exception("The question node isn't valid.")
 
                 self.log.debug("GetHardwareStoreByCityAgent get arguments")
-                cityArgumentNode = self.get_action_argument(self.main_node, 'rrel_1')
-                answerNode = self.ctx.CreateNode(ScType.NodeConstStruct)
-                self.add_nodes_to_answer(answerNode, [cityArgumentNode])
+                city = self.get_action_argument(self.main_node, 'rrel_1')
 
-                storeCity = self.get_hardware_stores_with_city()
-                cityArgument = self.get_main_idtf(cityArgumentNode).AsString()
+                concept_store = self.module.ctx.HelperResolveSystemIdtf("concept_hardware_store", ScType.NodeConstClass)
+                answer = self.module.ctx.HelperResolveSystemIdtf("found_store_by_city", ScType.NodeConst)
+                nrel_city = self.module.ctx.HelperResolveSystemIdtf("nrel_city", ScType.NodeConstNoRole)
+                store = self.module.ctx.Iterator3(concept_store, ScType.EdgeAccessConstPosPerm, ScType.NodeConst)
+                while store.Next():
+                    print("check new store")
+                    find_store = self.module.ctx.Iterator5(store.Get(2), ScType.EdgeDCommonConst, city,
+                                                            ScType.EdgeAccessConstPosPerm, nrel_city)
+                    print(find_store)
+                    while find_store.Next():
+                        if find_store.IsValid():
+                            print('is_valid')
+                            self.module.ctx.CreateEdge(ScType.EdgeAccessConstPosPerm, answer, store.Get(2))
+                            print('created')
 
-                results = []
-                for store, cityName in storeCity.items():
-                    if cityArgument == cityName:
-                        print(colored(str(cityName), 'green'))
-                        results.append(store)
-
-                for store in results:
-                    self.log.debug("GetHardwareStoreByCityAgent get answer")
-                    self.add_store_to_answer(store, answerNode)
-
-                self.finish_agent(self.main_node, answerNode)
                 self.log.debug("GetHardwareStoreByCityAgent ends")
             except Exception as ex:
                 self.set_unsuccessful_status()
                 status = ScResult.Error
-            finally:
-                self.ctx.CreateEdge(
-                    ScType.EdgeAccessConstPosPerm,
-                    self.keynodes['question_finished'],
-                    self.main_node,
-                )
         return status
 
     def set_unsuccessful_status(self):
@@ -62,23 +55,6 @@ class GetHardwareStoreByCityAgent(ScAgent):
             ScType.EdgeAccessConstPosPerm,
             self.keynodes['question_finished_unsuccessfully'],
             self.main_node,
-        )
-
-    def finish_agent(self, action_node, answer):
-        contour_edge = self.ctx.CreateEdge(
-            ScType.EdgeDCommonConst,
-            action_node,
-            answer
-        )
-        self.ctx.CreateEdge(
-            ScType.EdgeAccessConstPosPerm,
-            self.keynodes['nrel_answer'],
-            contour_edge
-        )
-        self.ctx.CreateEdge(
-            ScType.EdgeAccessConstPosPerm,
-            self.keynodes['question_finished_successfully'],
-            action_node,
         )
 
     def get_action_argument(self, question: ScAddr, rrel: str, argument_class=None) -> ScAddr:
@@ -105,74 +81,3 @@ class GetHardwareStoreByCityAgent(ScAgent):
 
         return argument_node
 
-    def add_nodes_to_answer(self, contour=None, nodes=None):
-        if contour is None:
-            contour = self.ctx.CreateNode()
-        if nodes is None:
-            nodes = []
-        for node in nodes:
-            self.ctx.CreateEdge(
-                ScType.EdgeAccessConstPosPerm,
-                contour,
-                node
-            )
-
-    def add_store_to_answer(self, store, answer):
-        template = ScTemplate()
-        template.TripleWithRelation(
-            store,
-            ScType.EdgeDCommonVar >> "_arc_1",
-            ScType.LinkVar >> '_city',
-            ScType.EdgeAccessVarPosPerm >> "_arc_2",
-            self.keynodes['nrel_city'],
-        )
-        search_result = self.ctx.HelperSearchTemplate(template)
-
-        if search_result.Size():
-            self.add_nodes_to_answer(answer,
-             [
-                store,
-                self.keynodes['nrel_city'],
-                search_result[0]['_arc_1'],
-                search_result[0]['_arc_2'],
-                search_result[0]['_city']
-            ]
-            )
-
-    def get_hardware_stores_with_city(self):
-        template = ScTemplate()
-        template.Triple(
-            self.keynodes['concept_hardware_store'],
-            ScType.EdgeAccessVarPosPerm,
-            ScType.NodeVar >> '_hardware_store'
-        )
-        template.TripleWithRelation(
-            '_hardware_store',
-            ScType.EdgeDCommonVar,
-            ScType.LinkVar >> '_city',
-            ScType.EdgeAccessVarPosPerm,
-            self.keynodes['nrel_city'],
-        )
-
-        search_result = self.ctx.HelperSearchTemplate(template)
-        hardware_stores_with_city = {}
-        if search_result.Size():
-            for i in range(search_result.Size()):
-                hardware_stores_with_city[search_result[i]['_hardware_store']] = self.ctx.GetLinkContent(search_result[i]['_city']).AsString()
-        return hardware_stores_with_city
-
-    def get_main_idtf(self, node):
-        template = ScTemplate()
-        template.TripleWithRelation(
-            node,
-            ScType.EdgeDCommonVar,
-            ScType.LinkVar >> 'value',
-            ScType.EdgeAccessVarPosPerm,
-            self.keynodes['nrel_main_idtf']
-        )
-        template_result = self.ctx.HelperSearchTemplate(template)
-        value = ''
-        if template_result.Size():
-            value = self.ctx.GetLinkContent(template_result[0]['value']).AsString()
-
-        return value

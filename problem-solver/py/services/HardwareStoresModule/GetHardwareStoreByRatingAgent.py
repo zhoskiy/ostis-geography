@@ -30,10 +30,11 @@ class GetHardwareStoreByRatingAgent(ScAgent):
 
                 firstRatingNode = self.get_action_argument(self.main_node, 'rrel_1')
                 secondRatingNode = self.get_action_argument(self.main_node, 'rrel_2')
-                answerNode = self.ctx.CreateNode(ScType.NodeConstStruct)
-                self.add_nodes_to_answer(answerNode, [firstRatingNode, secondRatingNode])
+                answer = self.module.ctx.HelperResolveSystemIdtf("found_store_by_rating", ScType.NodeConst)
 
+                self.log.debug("GetHardwareStoreByRatingAgent get stores")
                 storeRating = self.get_hardwate_stores_with_rating()
+                self.log.debug("GetHardwareStoreByRatingAgent get rating value")
                 firstRating = float(self.get_main_idtf(firstRatingNode))
                 secondRating = float(self.get_main_idtf(secondRatingNode))
 
@@ -44,20 +45,13 @@ class GetHardwareStoreByRatingAgent(ScAgent):
                         results.append(store)
 
                 for store in results:
-                    self.log.debug("GetHardwareStoreByRatingAgent get answer")
-                    self.add_stores_to_answer(store, answerNode)
+                    self.log.debug("GetHardwareStoreByRatingAgent add answer")
+                    self.module.ctx.CreateEdge(ScType.EdgeAccessConstPosPerm, answer, store)
 
-                self.finish_agent(self.main_node, answerNode)
                 self.log.debug("GetHardwareStoreByRatingAgent ends")
             except Exception as ex:
                 self.set_unsuccessful_status()
                 status = ScResult.Error
-            finally:
-                self.ctx.CreateEdge(
-                    ScType.EdgeAccessConstPosPerm,
-                    self.keynodes['question_finished'],
-                    self.main_node,
-                )
         return status
 
     def set_unsuccessful_status(self):
@@ -65,23 +59,6 @@ class GetHardwareStoreByRatingAgent(ScAgent):
             ScType.EdgeAccessConstPosPerm,
             self.keynodes['question_finished_unsuccessfully'],
             self.main_node,
-        )
-
-    def finish_agent(self, action_node, answer):
-        contour_edge = self.ctx.CreateEdge(
-            ScType.EdgeDCommonConst,
-            action_node,
-            answer
-        )
-        self.ctx.CreateEdge(
-            ScType.EdgeAccessConstPosPerm,
-            self.keynodes['nrel_answer'],
-            contour_edge
-        )
-        self.ctx.CreateEdge(
-            ScType.EdgeAccessConstPosPerm,
-            self.keynodes['question_finished_successfully'],
-            action_node,
         )
 
     def get_action_argument(self, question: ScAddr, rrel: str, argument_class=None) -> ScAddr:
@@ -107,40 +84,6 @@ class GetHardwareStoreByRatingAgent(ScAgent):
             raise Exception("The argument node isn't found.")
 
         return argument_node
-
-    def add_nodes_to_answer(self, contour=None, nodes=None):
-        if contour is None:
-            contour = self.ctx.CreateNode()
-        if nodes is None:
-            nodes = []
-        for node in nodes:
-            self.ctx.CreateEdge(
-                ScType.EdgeAccessConstPosPerm,
-                contour,
-                node
-            )
-
-    def add_stores_to_answer(self, store, answer):
-        template = ScTemplate()
-        template.TripleWithRelation(
-            store,
-            ScType.EdgeDCommonVar >> "_arc_1",
-            ScType.LinkVar >> '_store_rating',
-            ScType.EdgeAccessVarPosPerm >> "_arc_2",
-            self.keynodes['nrel_store_rating'],
-        )
-        search_result = self.ctx.HelperSearchTemplate(template)
-
-        if search_result.Size():
-            self.add_nodes_to_answer(answer,
-             [
-                store,
-                self.keynodes['nrel_store_rating'],
-                search_result[0]['_arc_1'],
-                search_result[0]['_arc_2'],
-                search_result[0]['_store_rating']
-            ]
-            )
 
     def get_hardwate_stores_with_rating(self):
         template = ScTemplate()
