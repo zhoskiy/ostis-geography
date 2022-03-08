@@ -9,7 +9,7 @@ SC_IMPLEMENT_MODULE(HardwareStoresModule)
 
 sc_result HardwareStoresModule::InitializeImpl()
 {
-  m_HardwareStoresService.reset(new HardwareStoresPythonService("HardwareStoresModule/HardwareStoresModule.py"));
+  m_HardwareStoresService.reset(new HardwareStoresPythonService("HardwareStoresModule/HardwareStoreModule.py"));
   m_HardwareStoresService->Run();
   return SC_RESULT_OK;
 }
