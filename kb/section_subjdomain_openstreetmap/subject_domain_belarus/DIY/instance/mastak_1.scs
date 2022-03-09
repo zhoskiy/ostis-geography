@@ -12,7 +12,8 @@ mastak_1
 =>nrel_city:
     senica;
 =>nrel_store_rating:
-    [4.4];
+    [4.4]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [2315];;
 

@@ -12,7 +12,8 @@ materik_2
 =>nrel_city:
     minsk;
 =>nrel_store_rating:
-    [4.5];
+    [4.5]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [1292];;
 

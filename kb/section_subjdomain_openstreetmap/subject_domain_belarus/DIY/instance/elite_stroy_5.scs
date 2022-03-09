@@ -12,7 +12,8 @@ elite_stroy_5
 =>nrel_city:
     pinsk;
 =>nrel_store_rating:
-    [3.7];
+    [3.7]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [3];;
 

@@ -12,7 +12,8 @@ mastak_3
 =>nrel_city:
     zhodino;
 =>nrel_store_rating:
-    [3.8];
+    [3.8]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [35];;
 

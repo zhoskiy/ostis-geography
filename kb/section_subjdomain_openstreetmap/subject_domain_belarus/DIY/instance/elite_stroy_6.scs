@@ -12,7 +12,8 @@ elite_stroy_6
 =>nrel_city:
     gomel;
 =>nrel_store_rating:
-    [4.4];
+    [4.4]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [7];;
 

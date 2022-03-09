@@ -12,7 +12,8 @@ bbg
 =>nrel_city:
     minsk;
 =>nrel_store_rating:
-    [4.1];
+    [4.1]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [42];;
 

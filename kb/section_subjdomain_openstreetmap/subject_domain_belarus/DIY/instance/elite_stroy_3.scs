@@ -12,7 +12,8 @@ elite_stroy_3
 =>nrel_city:
     slutsk;
 =>nrel_store_rating:
-    [4.2];
+    [4.2]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [29];;
 

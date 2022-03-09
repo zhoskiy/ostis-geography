@@ -12,7 +12,8 @@ arkady
 =>nrel_city:
     ratomka;
 =>nrel_store_rating:
-    [4.5];
+    [4.5]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [74];;
 

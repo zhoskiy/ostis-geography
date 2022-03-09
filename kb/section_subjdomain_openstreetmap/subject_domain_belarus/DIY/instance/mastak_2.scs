@@ -12,7 +12,8 @@ mastak_2
 =>nrel_city:
     zaslavl;
 =>nrel_store_rating:
-    [4.1];
+    [4.1]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [10];;
 

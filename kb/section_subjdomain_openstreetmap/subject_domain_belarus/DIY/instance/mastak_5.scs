@@ -12,7 +12,8 @@ mastak_5
 =>nrel_city:
     smolevichi;
 =>nrel_store_rating:
-    [4.7];
+    [4.7]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [39];;
 

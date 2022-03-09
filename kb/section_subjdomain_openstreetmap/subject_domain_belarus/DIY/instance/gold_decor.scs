@@ -12,7 +12,8 @@ gold_decor
 =>nrel_city:
     minsk;
 =>nrel_store_rating:
-    [5.0];
+    [5.0]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [3];;
 

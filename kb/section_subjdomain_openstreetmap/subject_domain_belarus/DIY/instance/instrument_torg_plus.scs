@@ -12,7 +12,8 @@ instrument_torg_plus
 =>nrel_city:
     senica;
 =>nrel_store_rating:
-    [5.0];
+    [5.0]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [1];;
 

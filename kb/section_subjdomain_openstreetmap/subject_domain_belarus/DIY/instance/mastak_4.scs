@@ -12,7 +12,8 @@ mastak_4
 =>nrel_city:
     borisov;
 =>nrel_store_rating:
-    [4.6];
+    [4.6]
+    (* <- concept_rating;; *);
 =>nrel_reviews_number:
     [520];;
 

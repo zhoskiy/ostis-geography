@@ -1,0 +1,34 @@
+concept_rating
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Рейтинг]
+	(* <- lang_ru;; *);
+	[Rating]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Хозяйственный магазин)]
+		(* <- lang_ru;; *);
+		[Def. (Hardware store)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Рейтинг]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Rating]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hardware_store
+		};;
+	*);;
